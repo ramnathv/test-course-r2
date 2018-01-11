@@ -1,6 +1,6 @@
 ---
-title       : Insert the chapter title here
-description : Insert the chapter description here
+title       : Chapter 1
+description : This is the first chapter.
 attachments :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
 
@@ -127,4 +127,167 @@ test_function("plot", args = "col")
 test_error()
 
 success_msg("Good work!")
+```
+
+
+
+---
+## Bullet Exercise
+
+```yaml
+type: BulletExercise
+key: 530e23fcbb
+lang: r
+xp: 100
+```
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+
+***
+
+### Sub Exercise 1
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+
+`@instructions`
+
+This is the first sub-exercise 
+
+`@sample_code`
+
+```{r}
+# Sample Code for Exercise 1
+```
+
+`@solution`
+```{r}
+
+```
+
+`@hint`
+
+`@sct`
+```{r}
+
+```
+
+***
+
+### Sub Exercise 2
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+
+`@instructions`
+
+This is the second sub-exercise.
+
+
+`@sample_code`
+
+```{r}
+# Sample Code for Exercise 2
+```
+
+`@solution`
+```{r}
+
+```
+
+`@hint`
+
+`@sct`
+```{r}
+
+```
+
+---
+## Tab Exercise
+
+```yaml
+type: TabExercise
+lang: r
+xp: 100
+```
+
+This is a Tab Exercise
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+
+***
+
+### Sub Exercise 1
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+
+`@instructions`
+
+This is the first sub-exercise 
+
+`@sample_code`
+
+```{r}
+# Sample Code for Exercise 1
+```
+
+`@solution`
+```{r}
+
+```
+
+`@hint`
+
+`@sct`
+```{r}
+
+```
+
+***
+
+### Sub Exercise 2
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+
+`@instructions`
+
+This is the second sub-exercise.
+
+
+`@sample_code`
+
+```{r}
+# Sample Code for Exercise 2
+```
+
+`@solution`
+```{r}
+
+```
+
+`@hint`
+
+`@sct`
+```{r}
+
 ```
