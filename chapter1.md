@@ -638,6 +638,11 @@ split_low <- lapply(split, tolower)
 ***
 ### Select name
 
+```yaml
+type: NormalExercise
+xp: 100
+```
+
 `@instructions`
 
 Write a function `select_first()` to extract the **first** element of a vector and apply it over the elements of `split_low`.
@@ -671,6 +676,11 @@ names <- lapply(split_low, select_first)
 ***
 
 ### Sub Heading 2
+
+```yaml
+type: NormalExercise
+xp: 100
+```
 
 ```yaml
 type: NormalExercise
