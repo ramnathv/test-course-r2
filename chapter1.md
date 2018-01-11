@@ -155,7 +155,6 @@ xp: 100
 ```yaml
 type: NormalExercise
 xp: 100
-key: b01a4941a3
 ```
 
 `@instructions`
@@ -187,7 +186,6 @@ This is the first sub-exercise
 ```yaml
 type: NormalExercise
 xp: 100
-key: cf699ec891
 ```
 
 `@instructions`
@@ -220,7 +218,6 @@ This is the second sub-exercise.
 type: TabExercise
 lang: r
 xp: 100
-key: 43b65f47bb
 ```
 
 This is a Tab Exercise
@@ -239,7 +236,6 @@ This is a Tab Exercise
 ```yaml
 type: NormalExercise
 xp: 100
-key: a886751132
 ```
 
 `@instructions`
@@ -271,7 +267,6 @@ This is the first sub-exercise
 ```yaml
 type: NormalExercise
 xp: 100
-key: 8406efa21c
 ```
 
 `@instructions`
@@ -283,6 +278,102 @@ This is the second sub-exercise.
 
 ```{r}
 # Sample Code for Exercise 2
+```
+
+`@solution`
+```{r}
+
+```
+
+`@hint`
+
+`@sct`
+```{r}
+
+```
+
+
+
+---
+## Base Graphics vs. Ggplot2 (Part 1)
+
+```yaml
+type: TabExercise
+key: a39aef6095
+lang: r
+xp: 100
+```
+
+To better appreciate `ggplot2` and understand how it works differently from base package, let us create a scatterplot of `hp` (horsepower) vs `drat` (rear axle ratio), colored by `cyl` (number of cylinders).
+
+```{r}
+# Base Graphics
+plot(mtcars$hp, mtcars$drat, col = as.factor(mtcars$cyl))
+
+# Ggplot2
+ggplot(mtcars, aes(x = hp, y = drat, col = as.factor(cyl))) +
+  geom_point()
+```
+
+Note that in both cases, we convert `cyl` to a factor as it represents discrete categories.
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+
+***
+
+### Sub Heading
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+
+`@instructions`
+
+Use base graphics to create a scatterplot of `mpg` vs `wt` colored by `gear` 
+
+
+`@sample_code`
+```{r}
+# Create a scatterplot of `mpg` vs `wt` colored by `gear`
+# Use base graphics
+```
+
+`@solution`
+```{r}
+
+```
+
+`@hint`
+
+`@sct`
+```{r}
+
+```
+
+***
+
+### Sub Heading 2
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+
+`@instructions`
+
+Use ggplot2 to create a scatterplot of `mpg` vs `wt` colored by `gear` 
+
+
+`@sample_code`
+```{r}
+# Create a scatterplot of `mpg` vs `wt` colored by `gear` 
+# Use ggplot2
 ```
 
 `@solution`
