@@ -155,6 +155,7 @@ xp: 100
 ```yaml
 type: NormalExercise
 xp: 100
+key: 636ae50119
 ```
 
 `@instructions`
@@ -186,6 +187,7 @@ This is the first sub-exercise
 ```yaml
 type: NormalExercise
 xp: 100
+key: c721038005
 ```
 
 `@instructions`
@@ -218,6 +220,7 @@ This is the second sub-exercise.
 type: TabExercise
 lang: r
 xp: 100
+key: 43b65f47bb
 ```
 
 This is a Tab Exercise
@@ -236,6 +239,7 @@ This is a Tab Exercise
 ```yaml
 type: NormalExercise
 xp: 100
+key: f1c09bceac
 ```
 
 `@instructions`
@@ -267,6 +271,7 @@ This is the first sub-exercise
 ```yaml
 type: NormalExercise
 xp: 100
+key: a43e6c8fe1
 ```
 
 `@instructions`
@@ -331,6 +336,7 @@ Note that in both cases, we convert `cyl` to a factor as it represents discrete 
 ```yaml
 type: NormalExercise
 xp: 100
+key: fa5be44690
 ```
 
 `@instructions`
@@ -363,6 +369,7 @@ Use base graphics to create a scatterplot of `mpg` vs `wt` colored by `gear`
 ```yaml
 type: NormalExercise
 xp: 100
+key: 60a1c29d4f
 ```
 
 `@instructions`
