@@ -394,3 +394,311 @@ Use ggplot2 to create a scatterplot of `mpg` vs `wt` colored by `gear`
 ```{r}
 
 ```
+
+
+
+---
+## Select - GroupBy - Summarize
+
+```yaml
+type: TabExercise
+key: ccbb1ef0c8
+lang: r
+xp: 100
+```
+
+
+`@pre_exercise_code`
+```{r}
+library(dplyr)
+```
+
+
+***
+
+### Select
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+
+`@instructions`
+
+Create a dataframe `mtcars_d` from `mtcars` by selecting columns `mpg` to `cyl`.
+
+`@sample_code`
+```{r}
+mtcars_d <- ___(mtcars, ___:___)
+```
+
+
+`@solution`
+```{r}
+
+```
+
+`@hint`
+
+`@sct`
+```{r}
+
+```
+
+***
+
+### GroupBy
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+
+`@instructions`
+
+Group the dataframe `mtcars_d` by `cyl` and assign it to `mtcars_dg`
+
+`@sample_code`
+
+```{r}
+mtcars_d <- select(mtcars, mpg:cyl)
+mtcars_dg <- groupby(mtcars_d, cyl)
+```
+
+`@solution`
+```{r}
+
+```
+
+`@hint`
+
+`@sct`
+```{r}
+
+```
+
+
+
+***
+
+### Summarize
+
+```yaml
+type: NormalExercise
+key: ad17cf6354
+```
+
+
+`@instructions`
+
+Compute the average mileage for each group, and save dataframe as `mtcars_dgs` 
+
+`@hint`
+
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
+```
+
+
+
+---
+## How many visitors could your site get (3)?
+
+```yaml
+type: TabExercise
+key: 1f2f33d8f5
+lang: r
+xp: 100
+```
+
+In the last exercise you updated the probability distribution over the underlying proportions of clicks (proportion\_clicks) using new data. Now we want to use this updated proportion\_clicks to predict how many visitors we would get if we ran the ad campaign again.
+
+The result from the last exercise is still in the data frame posterior, but if you look at `posterior$n_visits` you'll see it's just 13 repeated over and over again. This makes sense as posterior represents what the model knew about the outcome of the last ad campaign after having seen the data.
+
+
+`@pre_exercise_code`
+```{r}
+set.seed(123)
+n_samples <- 100000
+n_ads_shown <- 100
+proportion_clicks <- runif(n_samples, min = 0.0, max = 0.2)
+n_visitors <- rbinom(n = n_samples, size = n_ads_shown, prob = proportion_clicks)
+temp_prior <- data.frame(proportion_clicks, n_visitors)
+posterior <- temp_prior[temp_prior$n_visitors == 13, ]
+rm(proportion_clicks, n_visitors, temp_prior)
+```
+
+***
+
+### Sub Heading
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+
+`@instructions`
+
+Assign `posterior` to a new variable called `prior` which will represent the uncertainty regarding the new ad campaign you haven't run yet.
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@hint`
+
+`@sct`
+```{r}
+
+```
+
+***
+
+### Sub Heading 2
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+
+
+`@instructions`
+
+Take a look at the first rows in prior using the `head` function.
+
+`@sample_code`
+```{r}
+prior <- posterior
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@hint`
+
+`@sct`
+```{r}
+
+```
+
+
+
+---
+
+## Use lapply with your own Function
+
+```yaml
+type: BulletExercise
+key: a5a60079e2
+lang: r
+xp: 100
+```
+
+In the previous exercise you used `lapply()` to convert the information about your favorite pioneering statisticians to a list of vectors composed of two character strings.
+
+
+```{r}
+pioneers <- c("GAUSS:1777", "BAYES:1702", "PASCAL:1623", "PEARSON:1857")
+split <- strsplit(pioneers, split = ":")
+split_low <- lapply(split, tolower)
+```
+
+Let us now write some custom functions and `lapply` them to select the names and the birth years separately.
+
+`@pre_exercise_code`
+
+```{r}
+pioneers <- c("GAUSS:1777", "BAYES:1702", "PASCAL:1623", "PEARSON:1857")
+split <- strsplit(pioneers, split = ":")
+split_low <- lapply(split, tolower)
+```
+
+
+***
+### Select name
+
+`@instructions`
+
+Write a function `select_first()` to extract the **first** element of a vector and apply it over the elements of `split_low`.
+
+`@sample_code`
+
+```{r}
+# Write function select_first()
+select_first <- function(x) { x[1] }
+
+# Apply select_first() over split_low: names
+names <- ___(split_low, ___)
+```
+
+`@hint`
+
+`@solution`
+```{r}
+# Write function select_first()
+select_first <- function(x) { x[1] }
+
+# Apply select_first() over split_low: names
+names <- lapply(split_low, select_first)
+```
+
+`@sct`
+```{r}
+
+```
+
+***
+
+### Sub Heading 2
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+
+`@instructions`
+
+Write a function `select_second()` to extract the **second** element of a vector and apply it over the elements of `names`.
+
+`@sample_code`
+
+```{r}
+# Write function select_second()
+select_second <- 
+
+# Apply select_second() over split_low: years
+years <- 
+```
+
+`@hint`
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
+```
