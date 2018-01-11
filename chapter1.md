@@ -155,6 +155,7 @@ xp: 100
 ```yaml
 type: NormalExercise
 xp: 100
+key: b01a4941a3
 ```
 
 `@instructions`
@@ -186,6 +187,7 @@ This is the first sub-exercise
 ```yaml
 type: NormalExercise
 xp: 100
+key: cf699ec891
 ```
 
 `@instructions`
@@ -218,6 +220,7 @@ This is the second sub-exercise.
 type: TabExercise
 lang: r
 xp: 100
+key: 43b65f47bb
 ```
 
 This is a Tab Exercise
@@ -236,6 +239,7 @@ This is a Tab Exercise
 ```yaml
 type: NormalExercise
 xp: 100
+key: a886751132
 ```
 
 `@instructions`
@@ -267,6 +271,7 @@ This is the first sub-exercise
 ```yaml
 type: NormalExercise
 xp: 100
+key: 8406efa21c
 ```
 
 `@instructions`
