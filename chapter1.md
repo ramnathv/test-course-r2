@@ -421,6 +421,7 @@ library(dplyr)
 ```yaml
 type: NormalExercise
 xp: 100
+key: 4c8a66bfa8
 ```
 
 `@instructions`
@@ -452,6 +453,7 @@ mtcars_d <- ___(mtcars, ___:___)
 ```yaml
 type: NormalExercise
 xp: 100
+key: 123728034a
 ```
 
 `@instructions`
@@ -547,6 +549,7 @@ rm(proportion_clicks, n_visitors, temp_prior)
 ```yaml
 type: NormalExercise
 xp: 100
+key: e588e1715a
 ```
 
 `@instructions`
@@ -577,6 +580,7 @@ Assign `posterior` to a new variable called `prior` which will represent the unc
 ```yaml
 type: NormalExercise
 xp: 100
+key: 084e7329b1
 ```
 
 
@@ -641,6 +645,7 @@ split_low <- lapply(split, tolower)
 ```yaml
 type: NormalExercise
 xp: 100
+key: c9f23860b2
 ```
 
 `@instructions`
@@ -680,6 +685,7 @@ names <- lapply(split_low, select_first)
 ```yaml
 type: NormalExercise
 xp: 100
+key: d0272a858e
 ```
 
 ```yaml
