@@ -421,7 +421,6 @@ library(dplyr)
 ```yaml
 type: NormalExercise
 xp: 100
-key: 25d8f81152
 ```
 
 `@instructions`
@@ -453,7 +452,6 @@ mtcars_d <- ___(mtcars, ___:___)
 ```yaml
 type: NormalExercise
 xp: 100
-key: 03ddf49193
 ```
 
 `@instructions`
@@ -549,7 +547,6 @@ rm(proportion_clicks, n_visitors, temp_prior)
 ```yaml
 type: NormalExercise
 xp: 100
-key: e3e3dfac07
 ```
 
 `@instructions`
@@ -580,7 +577,6 @@ Assign `posterior` to a new variable called `prior` which will represent the unc
 ```yaml
 type: NormalExercise
 xp: 100
-key: 4bf7b2f453
 ```
 
 
@@ -645,7 +641,6 @@ split_low <- lapply(split, tolower)
 ```yaml
 type: NormalExercise
 xp: 100
-key: a5a270620f
 ```
 
 `@instructions`
@@ -685,7 +680,6 @@ names <- lapply(split_low, select_first)
 ```yaml
 type: NormalExercise
 xp: 100
-key: 31750228ec
 ```
 
 ```yaml
@@ -706,6 +700,100 @@ select_second <-
 # Apply select_second() over split_low: years
 years <- 
 ```
+
+`@hint`
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
+```
+
+
+
+---
+
+## Arithmetic with R
+
+
+```yaml
+type: BulletExercise
+key: 616dc3c289
+lang: r
+xp: 100
+```
+
+In its most basic form, R can be used as a simple calculator.
+
+| Operation        | Symbol | Input    | Output |
+|------------------|--------|----------|--------|
+| Addition         |   +    | 5 + 2    |   7    |
+| Subtraction      |   -    | 5 - 2    |   3    |
+| Multiplication   |   *    | 5 * 2    |   10   |
+| Division         |   /    | 5 / 2    |   2.5  |
+| Integer Division |  %/%   | 5 %/% 2  |   2    |
+| Modulo           |  %%    | 5 %% 2   |   1    |
+| Exponentiation   |   ^    | 5^2      |   25   |
+ 
+
+The last two might need some explaining:
+
+- 5 modulo 2 returns the reminder of dividing 5 by 2 to give 1
+- 5^2 raises 5 to the power of 2 to give 25
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+***
+
+### Sub Heading
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+
+`@instructions`
+
+Multiply the number 4 by 6
+
+
+`@hint`
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
+```
+
+***
+
+### Sub Heading 2
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+
+`@instructions`
+
+Calculate 2 to the power of 5
 
 `@hint`
 
