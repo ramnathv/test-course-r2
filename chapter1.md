@@ -431,11 +431,6 @@ The last two might need some explaining:
 
 ```
 
-`@sample_code`
-```{r}
-
-```
-
 ***
 
 ### Sub Heading
@@ -443,13 +438,17 @@ The last two might need some explaining:
 ```yaml
 type: NormalExercise
 xp: 100
-key: b120cf8d9c
 ```
 
 `@instructions`
 
 Multiply the number 4 by 6
 
+`@sample_code`
+```{r}
+
+```
+
 
 `@hint`
 
@@ -470,13 +469,17 @@ Multiply the number 4 by 6
 ```yaml
 type: NormalExercise
 xp: 100
-key: 40bc17c79f
 ```
 
 `@instructions`
 
 Calculate 2 to the power of 5
 
+`@sample_code`
+```{r}
+
+```
+
 
 `@hint`
 
@@ -497,12 +500,13 @@ Calculate 2 to the power of 5
 ```yaml
 type: NormalExercise
 xp: 100
-key: 1e2441d69b
 ```
 
 `@instructions`
 
 Compute the remainder of 28 divided by 6
+
+
 
 
 `@hint`
