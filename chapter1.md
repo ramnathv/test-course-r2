@@ -438,6 +438,7 @@ The last two might need some explaining:
 ```yaml
 type: NormalExercise
 xp: 100
+key: 9e93e150fa
 ```
 
 `@instructions`
@@ -469,6 +470,7 @@ Multiply the number 4 by 6
 ```yaml
 type: NormalExercise
 xp: 100
+key: 6d849a3a85
 ```
 
 `@instructions`
@@ -500,6 +502,7 @@ Calculate 2 to the power of 5
 ```yaml
 type: NormalExercise
 xp: 100
+key: e864388921
 ```
 
 `@instructions`
