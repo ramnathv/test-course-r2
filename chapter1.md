@@ -716,34 +716,14 @@ years <-
 
 
 ---
-
-## Arithmetic with R
-
+## <<<New Exercise>>>
 
 ```yaml
 type: BulletExercise
-key: 616dc3c289
+key: 5accd7dcc0
 lang: r
 xp: 100
 ```
-
-In its most basic form, R can be used as a simple calculator.
-
-| Operation        | Symbol | Input    | Output |
-|------------------|--------|----------|--------|
-| Addition         |   +    | 5 + 2    |   7    |
-| Subtraction      |   -    | 5 - 2    |   3    |
-| Multiplication   |   *    | 5 * 2    |   10   |
-| Division         |   /    | 5 / 2    |   2.5  |
-| Integer Division |  %/%   | 5 %/% 2  |   2    |
-| Modulo           |  %%    | 5 %% 2   |   1    |
-| Exponentiation   |   ^    | 5^2      |   25   |
- 
-
-The last two might need some explaining:
-
-- 5 modulo 2 returns the reminder of dividing 5 by 2 to give 1
-- 5^2 raises 5 to the power of 2 to give 25
 
 
 `@pre_exercise_code`
@@ -767,9 +747,6 @@ xp: 100
 
 `@instructions`
 
-Multiply the number 4 by 6
-
-
 `@hint`
 
 `@solution`
@@ -792,8 +769,6 @@ xp: 100
 ```
 
 `@instructions`
-
-Calculate 2 to the power of 5
 
 `@hint`
 
