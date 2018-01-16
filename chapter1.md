@@ -524,3 +524,188 @@ Compute the remainder of 28 divided by 6
 
 ```
 
+---
+
+## Position
+
+```yaml
+type: BulletExercise
+xp: 100
+lang: r
+key: b2778c38b2
+```
+
+In the previous chapter you saw that there are lots of ways to position scatter plots. Likewise, the [`geom_bar()`](http://www.rdocumentation.org/packages/ggplot2/functions/geom_bar) and [`geom_histogram()`](http://www.rdocumentation.org/packages/ggplot2/functions/geom_histogram) geoms also have a `position` argument, which you can use to specify how to draw the bars of the plot.
+
+Three `position` arguments will be introduced here:
+
+- `stack`: place the bars on top of each other. Counts are used. **This is the default position**.
+- `fill`: place the bars on top of each other, but this time use proportions.
+- `dodge`: place the bars next to each other. Counts are used.
+
+In this exercise you'll draw the total count of cars having a given number of cylinders (`cyl`), according to manual or automatic transmission type (`am`) - as shown in the viewer.
+
+Since, in the built-in `mtcars` data set, `cyl` and `am` are integers, they have already been converted to factor variables for you.
+
+`@pre_exercise_code`
+
+```{r eval = FALSE}
+library(ggplot2)
+mtcars$cyl <- factor(mtcars$cyl)
+mtcars$am <- factor(mtcars$am)
+# ggplot(mtcars, aes(x = cyl, fill = am)) +
+#  geom_bar(position = "dodge")
+```
+
+***
+
+```yaml
+type: NormalExercise
+xp: 25
+```
+
+`@instructions`
+
+Use [`geom_bar()`](http://www.rdocumentation.org/packages/ggplot2/functions/geom_bar) to make a bar plot of `cyl` filled by `am`.
+
+`@hint`
+
+Use [`aes()`](http://www.rdocumentation.org/packages/ggplot2/functions/aes) within [`ggplot()`](http://www.rdocumentation.org/packages/ggplot2/functions/ggplot) to map `x = cyl` and `fill = am`. You don't have to use [`factor()`](http://www.rdocumentation.org/packages/base/functions/factor) here, because these variables are already factors within the `mtcars` dataset. Add [`geom_bar()`](http://www.rdocumentation.org/packages/ggplot2/functions/geom_bar) to the command.
+
+`@sample_code`
+
+```{r eval = FALSE}
+# Draw a bar plot of cyl, filled by am, stacked on top of each other
+ggplot(mtcars, aes(x = cyl, fill = am)) +
+  ___()
+```
+
+`@solution`
+
+```{r eval = FALSE}
+# Draw a bar plot of cyl, filled according to am
+ggplot(mtcars, aes(x = cyl, fill = am)) +
+  geom_bar()
+```
+
+`@sct`
+
+```{r}
+test_ggplot()
+```
+
+
+***
+
+```yaml
+type: NormalExercise
+xp: 25
+```
+
+`@instructions`
+
+Set `position` to "dodge" in [`geom_bar()`](http://www.rdocumentation.org/packages/ggplot2/functions/geom_bar). 
+
+`@hint`
+
+Set  [`geom_bar(position = "dodge")`](http://www.rdocumentation.org/packages/ggplot2/functions/geom_bar).
+
+`@sample_code`
+
+```{r eval = F}
+# Draw a bar plot of cyl, filled by am, with position set to 'dodge'
+ggplot(mtcars, aes(x = ___, fill = ___)) +
+  ___(position = ___)
+```
+
+`@solution`
+
+```{r}
+# Draw a bar plot of cyl, filled by am, with position set to 'dodge'
+ggplot(mtcars, aes(x = cyl, fill = am)) +
+  geom_bar(position = "dodge")
+```
+
+
+`@sct`
+
+```{r}
+test_ggplot()
+```
+
+***
+
+```yaml
+type: NormalExercise
+xp: 25
+```
+
+`@instructions`
+
+Set `position` to "fill" in [`geom_bar()`](http://www.rdocumentation.org/packages/ggplot2/functions/geom_bar).
+
+`@hint`
+
+Set [`geom_bar(position = "fill")`](http://www.rdocumentation.org/packages/ggplot2/functions/geom_bar).
+
+
+`@sample_code`
+
+```{r eval = F}
+# Draw a bar plot of cyl, filled by am, with position set to 'fill'
+ggplot(___, aes(x = ___, fill = ___)) +
+  ___(___ = ___)
+```
+
+`@solution`
+
+```{r}
+# Draw a bar plot of cyl, filled by am, with position set to 'fill'
+ggplot(mtcars, aes(x = cyl, fill = am)) +
+  geom_bar(position = "fill")
+```
+
+`@sct`
+
+```{r}
+test_ggplot()
+```
+
+***
+
+```yaml
+type: NormalExercise
+xp: 25
+```
+
+`@instructions`
+
+Set `position` to "stack" in [`geom_bar()`](http://www.rdocumentation.org/packages/ggplot2/functions/geom_bar).
+
+`@hint`
+
+Set [`geom_bar(position = "stack")`](http://www.rdocumentation.org/packages/ggplot2/functions/geom_bar).
+
+`@sample_code`
+
+```{r eval = F}
+# Draw a bar plot of cyl, filled by am, with position set to 'stack'
+
+
+```
+
+`@solution`
+
+```{r eval=FALSE}
+# Draw a bar plot of cyl, filled by am, with position set to 'stack'
+ggplot(mtcars, aes(x = cyl, fill = am)) +
+  geom_bar(position = "dodge")
+```
+
+`@sct`
+
+```{r}
+test_ggplot()
+success_msg("Good job! Different kinds of plots need different `position` arguments, so it's important to be familiar with this attribute.")
+```
+
