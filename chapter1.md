@@ -562,6 +562,7 @@ mtcars$am <- factor(mtcars$am)
 ```yaml
 type: NormalExercise
 xp: 25
+key: 2c082a3672
 ```
 
 `@instructions`
@@ -600,6 +601,7 @@ test_ggplot()
 ```yaml
 type: NormalExercise
 xp: 25
+key: 44fe7a3ff2
 ```
 
 `@instructions`
@@ -638,6 +640,7 @@ test_ggplot()
 ```yaml
 type: NormalExercise
 xp: 25
+key: 6c8f23d7c3
 ```
 
 `@instructions`
@@ -676,6 +679,7 @@ test_ggplot()
 ```yaml
 type: NormalExercise
 xp: 25
+key: 466a608208
 ```
 
 `@instructions`
