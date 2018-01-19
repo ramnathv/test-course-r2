@@ -810,6 +810,7 @@ xp: 100
 ```yaml
 type: NormalExercise
 xp: 100
+key: 814ed4a9df
 ```
 
 `@instructions`
@@ -841,6 +842,7 @@ x
 ```yaml
 type: NormalExercise
 xp: 100
+key: 3b88b3326d
 ```
 `@instructions`
 
