@@ -713,3 +713,58 @@ test_ggplot()
 success_msg("Good job! Different kinds of plots need different `position` arguments, so it's important to be familiar with this attribute.")
 ```
 
+
+
+---
+
+<style>
+.note {
+  background: #36D57D;
+  padding: 10px;
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  width: 100%;
+  z-index: 999;
+</style>
+
+<div class="note">
+This is an interactive coding exercise, where users write code in an editor and submit it.
+</div>
+
+## Normal Exercise
+
+```yaml
+type: NormalExercise
+key: acb7e544ee
+lang: r
+xp: 100
+skills: 1
+```
+
+
+
+
+`@instructions`
+
+`@hint`
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
+```
