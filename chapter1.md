@@ -768,3 +768,98 @@ skills: 1
 ```{r}
 
 ```
+
+
+
+---
+## Bullet Exercise - Fading
+
+<style>
+.note {
+  background: #36D57D;
+  padding: 10px;
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  width: 100%;
+  z-index: 999;
+</style>
+
+<div class="note">
+A BulletExercise can be used for fading!
+</div>
+
+```yaml
+type: BulletExercise
+key: 8aeaeeedb8
+lang: r
+xp: 100
+```
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+
+***
+
+### Sub Heading
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+
+`@instructions`
+
+Sub Exercise 1
+
+`@sample_code`
+```{r}
+  
+```
+
+`@hint`
+
+`@solution`
+```{r}
+x = 10
+x
+```
+
+`@sct`
+```{r}
+
+```
+
+***
+
+### Sub Heading 2
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+`@instructions`
+
+Sub Exercise 2
+
+`@sample_code`
+```{r}
+  
+```
+
+`@hint`
+
+`@solution`
+```{r}
+x = 10
+x
+```
+
+`@sct`
+```{r}
+
+```
