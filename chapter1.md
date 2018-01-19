@@ -526,7 +526,7 @@ Compute the remainder of 28 divided by 6
 
 ---
 
-## Position
+## Positioning Bars
 
 ```yaml
 type: BulletExercise
@@ -535,6 +535,14 @@ lang: r
 key: b2778c38b2
 ```
 
+While drawing a bar plot with multiple groups, you can position them using the `position` argument to [`geom_bar()`](http://www.rdocumentation.org/packages/ggplot2/functions/geom_bar).
+
+![image](https://imgur.com/RNWsjPJ.png)
+
+
+
+<!--
+
 In the previous chapter you saw that there are lots of ways to position scatter plots. Likewise, the [`geom_bar()`](http://www.rdocumentation.org/packages/ggplot2/functions/geom_bar) and [`geom_histogram()`](http://www.rdocumentation.org/packages/ggplot2/functions/geom_histogram) geoms also have a `position` argument, which you can use to specify how to draw the bars of the plot.
 
 Three `position` arguments will be introduced here:
@@ -542,10 +550,13 @@ Three `position` arguments will be introduced here:
 - `stack`: place the bars on top of each other. Counts are used. **This is the default position**.
 - `fill`: place the bars on top of each other, but this time use proportions.
 - `dodge`: place the bars next to each other. Counts are used.
+-->
 
-In this exercise you'll draw the total count of cars having a given number of cylinders (`cyl`), according to manual or automatic transmission type (`am`) - as shown in the viewer.
+In this exercise you'll draw a bar plot of the count of cars by number of cylinders (`cyl`), according to manual or automatic transmission type (`am`) 
 
+<!--
 Since, in the built-in `mtcars` data set, `cyl` and `am` are integers, they have already been converted to factor variables for you.
+-->
 
 `@pre_exercise_code`
 
@@ -810,7 +821,6 @@ xp: 100
 ```yaml
 type: NormalExercise
 xp: 100
-key: 814ed4a9df
 ```
 
 `@instructions`
@@ -842,7 +852,6 @@ x
 ```yaml
 type: NormalExercise
 xp: 100
-key: 3b88b3326d
 ```
 `@instructions`
 
@@ -865,3 +874,27 @@ x
 ```{r}
 
 ```
+
+
+
+---
+## NormalExercise
+
+```yaml
+type: PureMultipleChoiceExercise
+key: 7bf8572838
+xp: 50
+skills: 1
+```
+
+A `NormalExercise` gives students some background information and instructions, then checks the code they submit and provides feedback. The exercise and instructions are shown on the left, the code editor in the top right, and an interactive console for experimentation in the bottom right. Code is executed in two processes/environments so that you can safely compare objects in them in the submission correctness tests.
+
+![normex](http://authoring.datacamp.com/images/NormalExercise.png)
+
+
+`@possible_answers`
+
+`@hint`
+
+`@feedbacks`
+
